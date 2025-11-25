@@ -3,6 +3,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    /* CAMBIO 3: Se corrigió el error tipográfico "sans-seriAf" */
     font-family: Arial, sans-serif;
 }
 
@@ -48,6 +49,15 @@ header h1 {
     border: 1px solid #ddd;
     border-radius: 4px;
     font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+/* CAMBIO 4: Nueva regla para resaltar el campo activo (Accesibilidad) */
+.campo input:focus,
+.campo textarea:focus {
+    outline: none;
+    border-color: #3498db;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.3);
 }
 
 .btn-enviar {
@@ -64,7 +74,8 @@ header h1 {
 }
 
 .btn-enviar:hover {
-    background-color: #2980b9;
+    /* CAMBIO 5: Ajuste de color hover para mejor contraste */
+    background-color: #1e6091;
 }
 
 footer {
